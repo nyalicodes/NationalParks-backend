@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ShaCompanyName.ShaProjectName</name>
+    </assembly>
+    <members>
+        <member name="T:ShaCompanyName.ShaProjectName.Authorization.IShaProjectNamePermissionChecker">
+            <summary>
+            ShaProjectName Permission checker
+            </summary>
+        </member>
+        <member name="M:ShaCompanyName.ShaProjectName.Authorization.IShaProjectNamePermissionChecker.IsDataAdministrator(Shesha.Domain.Person)">
+            <summary>
+            
+            </summary>
+            <param name="person"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ShaCompanyName.ShaProjectName.Authorization.PermissionNames">
+            <summary>
+            ShaProjectName Permission names
+            </summary>
+        </member>
+        <member name="F:ShaCompanyName.ShaProjectName.Authorization.PermissionNames.GeneralDashboard">
+            <summary>
+            Pages: General Dashboard
+            </summary>
+        </member>
+        <member name="T:ShaCompanyName.ShaProjectName.Authorization.RoleNames">
+            <summary>
+            ShaProjectName Role Names
+            </summary>
+        </member>
+        <member name="F:ShaCompanyName.ShaProjectName.Authorization.RoleNames.DataAdministrator">
+            <summary>
+            Data Administrator
+            </summary>
+        </member>
+        <member name="T:ShaCompanyName.ShaProjectName.Authorization.ShaProjectNameAuthorizationProvider">
+            <summary>
+            ShaProjectName Authorization Provider
+            </summary>
+        </member>
+        <member name="M:ShaCompanyName.ShaProjectName.Authorization.ShaProjectNameAuthorizationProvider.SetPermissions(Abp.Authorization.IPermissionDefinitionContext)">
+            <summary>
+            Register permissions declared in the <see cref="T:ShaCompanyName.ShaProjectName.Authorization.PermissionNames"/> class
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:ShaCompanyName.ShaProjectName.Authorization.ShaProjectNamePermissionChecker">
+            <summary>
+            ShaProjectName Permission checker
+            </summary>
+        </member>
+        <member name="M:ShaCompanyName.ShaProjectName.Authorization.ShaProjectNamePermissionChecker.#ctor(Abp.Domain.Repositories.IRepository{Shesha.Domain.Person,System.Guid},Abp.Domain.Repositories.IRepository{Shesha.Domain.ShaRoleAppointedPerson,System.Guid},Abp.Domain.Repositories.IRepository{Shesha.Domain.ShaRoleAppointmentEntity,System.Guid})">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:ShaCompanyName.ShaProjectName.Authorization.ShaProjectNamePermissionChecker.IsGrantedAsync(System.Int64,System.String)">
+            inheritedDoc
+        </member>
+        <member name="M:ShaCompanyName.ShaProjectName.Authorization.ShaProjectNamePermissionChecker.IsInAnyOfRoles(Shesha.Domain.Person,System.String[])">
+            inheritedDoc
+        </member>
+        <member name="M:ShaCompanyName.ShaProjectName.Authorization.ShaProjectNamePermissionChecker.IsDataAdministrator(Shesha.Domain.Person)">
+            <summary>
+            
+            </summary>
+            <param name="person"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ShaCompanyName.ShaProjectName.Configuration.ShaProjectNameSettingNames">
+            <summary>
+            Contains setting names for ShaProjectNames
+            </summary>
+        </member>
+        <member name="T:ShaCompanyName.ShaProjectName.Configuration.ShaProjectNameSettingProvider">
+            <summary>
+            Defines ShaProjectName settings
+            </summary>
+        </member>
+        <member name="M:ShaCompanyName.ShaProjectName.Configuration.ShaProjectNameSettingsAppService.Update(ShaCompanyName.ShaProjectName.Configuration.ShaProjectNameSettingsDto)">
+            <summary>
+            Updates ShaProjectName settings
+            </summary>
+        </member>
+        <member name="M:ShaCompanyName.ShaProjectName.Configuration.ShaProjectNameSettingsAppService.Get">
+            <summary>
+            Returns ShaProjectName settings
+            </summary>
+        </member>
+        <member name="M:ShaCompanyName.ShaProjectName.Configuration.ShaProjectNameSettingsAppService.ChangeSettingAsync(System.String,System.String)">
+            <summary>
+            Changes setting for tenant with fallback to application
+            </summary>
+            <param name="name">Setting name</param>
+            <param name="value">Setting value</param>
+        </member>
+        <member name="T:ShaCompanyName.ShaProjectName.Configuration.ShaProjectNameSettingsDto">
+            <summary>
+            ShaProjectName settings DTO
+            </summary>
+        </member>
+        <member name="T:ShaCompanyName.ShaProjectName.ShaProjectNameModule">
+            <summary>
+            ShaProjectName Module
+            </summary>
+        </member>
+        <member name="M:ShaCompanyName.ShaProjectName.ShaProjectNameModule.Initialize">
+            inheritedDoc
+        </member>
+        <member name="M:ShaCompanyName.ShaProjectName.ShaProjectNameModule.PreInitialize">
+            inheritedDoc
+        </member>
+        <member name="M:ShaCompanyName.ShaProjectName.ShaProjectNameModule.PostInitialize">
+            inheritedDoc
+        </member>
+    </members>
+</doc>
